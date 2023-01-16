@@ -1,0 +1,54 @@
+version: '3'
+networks:
+  emby:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.6.0.0/16
+          gateway: 172.6.0.1
+services:
+  embyserver:
+    container_name: Emby
+    image: linuxserver/emby:4.7.11.0-ls140
+    restart: unless-stopped
+    ports:
+      - 8096:8096
+      - 8920:8920
+    environment:
+      - TZ=Europe/Vienna
+      - PGID=1000
+      - PUID=1000
+      - NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
+      - /home/ubuntu/.config/emby:/config
+      - /media/mediaserver/filme:/data/movies
+    networks:
+      emby:
+        ipv4_address: 172.6.0.2
+    security_opt:
+      - no-new-privileges:true
+    devices:
+      - /dev/dri:/dev/dri
+  ombyserver:
+    container_name: Omby
+    image: linuxserver/ombi:v4.22.5-ls147
+    restart: unless-stopped
+    ports:
+      - 3579:3579
+    environment:
+      - TZ=Europe/Vienna
+      - PGID=1000
+      - PUID=1000
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
+      - /home/ubuntu/.config/omby:/config
+    networks:
+      emby:
+        ipv4_address: 172.6.0.3
+    security_opt:
+      - no-new-privileges:true
