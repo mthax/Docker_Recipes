@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d92b926-d791-4575-a2e6-234ffaae943f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/Emby &amp; Ombi/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="1d92b926-d791-4575-a2e6-234ffaae943f" name="Changes" comment="Initial Emby Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +39,28 @@
       <option name="presentableId" value="Default" />
       <updated>1673836815104</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1673837444974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673837444974</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1673837458130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673837458130</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial Emby Commit">
+      <created>1673837486657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673837486657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -58,5 +73,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Initial Emby Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Emby Commit" />
   </component>
 </project>
