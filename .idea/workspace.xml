@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d92b926-d791-4575-a2e6-234ffaae943f" name="Changes" comment="Trust New Environment">
-      <change afterPath="$PROJECT_DIR$/Recipes/README.md" afterDir="false" />
+    <list default="true" id="1d92b926-d791-4575-a2e6-234ffaae943f" name="Changes" comment="Add Readme File">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recipes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Recipes/Emby &amp; Ombi/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673837693874</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Trust New Environment">
+      <created>1673837902290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673837902290</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Readme File">
+      <created>1673837913886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673837913886</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +103,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Initial Emby Commit" />
     <MESSAGE value="Trust New Environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trust New Environment" />
+    <MESSAGE value="Add Readme File" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Readme File" />
   </component>
 </project>
