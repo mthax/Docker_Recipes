@@ -1,0 +1,28 @@
+version: '3'
+networks:
+  chef:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.5.0.0/16
+          gateway: 172.5.0.1
+services:
+  chefstack:
+    image: mpepping/cyberchef:v9.55.0
+    container_name: Chef
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Vienna
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
+    ports:
+      - 10000:8000
+    networks:
+      chef:
+        ipv4_address: 172.5.0.2
+    security_opt:
+      - no-new-privileges:true
