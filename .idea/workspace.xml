@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e39c72d9-1ee1-455f-9b64-9555af6992fa" name="Changes" comment="Generalize Emby Compose File">
+    <list default="true" id="e39c72d9-1ee1-455f-9b64-9555af6992fa" name="Changes" comment="Update Description with static IP's">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674248641510</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial Commit">
+      <created>1674248770500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674248770500</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Description with static IP's">
+      <created>1674248806867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674248806867</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,9 +111,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repo Description" />
     <MESSAGE value="Remove Additional Description" />
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Switch to LR" />
     <MESSAGE value="Generalize Emby Compose File" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generalize Emby Compose File" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Update Description with static IP's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Description with static IP's" />
   </component>
 </project>
