@@ -1,0 +1,37 @@
+version: '3'
+networks:
+  gitea:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.7.0.0/16
+          gateway: 172.7.0.1
+services:
+  giteastack:
+    image: gitea/gitea:1.18.0-rootless
+    container_name: Gitea
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - USER_UID#=1000
+      - USER_GID=1000
+      - TZ=Europe/Vienna
+      - GITEA__database__DB_TYPE=postgres
+      - GITEA__database__HOST=PostgresDBIP:PostgresDBPort
+      - GITEA__database__NAME=GiteaDBName
+      - GITEA__database__USER=GiteaDBUser
+      - GITEA__database__PASSWD=GiteaDBPasswort
+    volumes:
+      - /PathToGiteaConfig:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
+    ports:
+      - 2222:22
+      - 3333:3000
+    networks:
+      gitea:
+        ipv4_address: 172.7.0.2
+    security_opt:
+      - no-new-privileges:true
