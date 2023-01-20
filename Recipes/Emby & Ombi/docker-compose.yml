@@ -46,7 +46,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
       - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
-      - /home/ubuntu/.config/omby:/config
+      - /PathtoFiles:/config
     networks:
       emby:
         ipv4_address: 172.6.0.3
