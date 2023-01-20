@@ -9,4 +9,6 @@ One thing you will notice in my compose files is that i often use https ( 80 ) i
 
 I love the Idea of Containers having static IP's, so i configured my compose files to use static ips. If you dislike my ranges, change them to whatever you want. Similar to that change the timezones or external ports to whatever you want.
 
-Look @ DockerHub or @ the Homepages of the Projects used to find about all configuration options. I just used what i needed, but it will maybe not be everything you may need. But oposite to many other compose files are mine writen to coexist with other containers and compose files. I rarely install a duplicate server, i often use for example a existing database. But some projects like Nextcloud sadly won't work well without an own database
+Look @ DockerHub or @ the Homepages of the Projects used to find about all configuration options. I just used what i needed, but it will maybe not be everything you may need. But oposite to many other compose files are mine writen to coexist with other containers and compose files. I rarely install a duplicate server, i often use for example a existing database. But some projects like Nextcloud sadly won't work well without an own database.
+
+I allways pin my containers to Version which work for me. Latest sometimes is too buggy.
