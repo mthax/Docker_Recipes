@@ -7,4 +7,4 @@ Furthermore do i not use Placeholder - IPs or something similar, cause it allway
 
 One thing you will notice in my compose files is that i often use https ( 80 ) instead of https ( 443 ), because i dont need network encryption behind my Reverse Proxy. If it's already encrypted or it isn't much work, i sure will use encryption, but i won't create certificates etc. Firewall and Reverse Proxy do that, so keep in mind, you will want a Reverse Proxy with a working certificate ( for example from Lets Encrypt ) for it.
 
-I love the Idea of Containers having static IP's, so i configured my compose files to use static ips. If you dislike my ranges, change them to whatever you want.
+I love the Idea of Containers having static IP's, so i configured my compose files to use static ips. If you dislike my ranges, change them to whatever you want. Similar to that change the timezones or external ports to whatever you want
