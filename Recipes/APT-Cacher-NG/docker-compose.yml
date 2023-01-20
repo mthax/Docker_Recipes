@@ -1,0 +1,29 @@
+version: '3'
+networks:
+  cacher:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.4.0.0/16
+          gateway: 172.4.0.1
+services:
+  cacher:
+    image: sameersbn/apt-cacher-ng:3.7.4-20220421
+    container_name: APT-Cacher-NG
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Vienna
+    volumes:
+      - /PathtoCacheDirectory:/var/cache/apt-cacher-ng
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
+    ports:
+      - 3142:3142
+    networks:
+      cacher:
+        ipv4_address: 172.4.0.2
+    security_opt:
+      - no-new-privileges:true
