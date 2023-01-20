@@ -23,8 +23,9 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
       - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
-      - /home/ubuntu/.config/emby:/config
-      - /media/mediaserver/filme:/data/movies
+      - /PathtoEmbiConfigFiles:/config
+      - /path/to/movies:/data/movies
+      - /path/to/xyz:/data/xyz
     networks:
       emby:
         ipv4_address: 172.6.0.2
@@ -46,7 +47,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
       - /usr/share/zoneinfo:/usr/share/zoneinfo:ro
-      - /PathtoFiles:/config
+      - /PathtoOmbiConfigFiles:/config
     networks:
       emby:
         ipv4_address: 172.6.0.3
